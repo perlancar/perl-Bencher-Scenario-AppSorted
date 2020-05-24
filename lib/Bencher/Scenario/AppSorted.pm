@@ -20,7 +20,7 @@ write_text("$dir/100k-unsorted-beginning", join("", map {sprintf "%06d\n", $_} 2
 our $scenario = {
     summary => 'Benchmark sorted vs is-sorted',
     participants => [
-        {name=>"sorted"   , module=>'App::sorted', cmdline_template=>'sorted -q <filename>; true'},
+        {name=>"sorted"   , module=>'App::sorted', cmdline_template=>'sorted <filename>; true'},
         {name=>"is-sorted", module=>'File::IsSorted', cmdline_template=>'is-sorted check <filename>; true'},
     ],
     precision => 7,
