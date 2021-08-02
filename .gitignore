@@ -2,3 +2,4 @@ Bencher-Scenario-AppSorted-*
 .build
 *~
 nytprof*
+.DS_Store
